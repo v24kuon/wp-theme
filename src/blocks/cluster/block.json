@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tagme/cluster",
+  "version": "1.0.0",
+  "title": "Cluster",
+  "category": "layout",
+  "icon": "grid-view",
+  "description": "A layout primitive for grouping elements together horizontally that wrap if space is limited.",
+  "supports": {
+    "align": ["wide", "full"],
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    },
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    }
+  },
+  "textdomain": "tagme",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

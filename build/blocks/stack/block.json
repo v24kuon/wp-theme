@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tagme/stack",
+  "version": "1.0.0",
+  "title": "Stack",
+  "category": "layout",
+  "icon": "menu",
+  "description": "A layout primitive for vertically stacking elements.",
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    },
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    }
+  },
+  "textdomain": "tagme",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}
