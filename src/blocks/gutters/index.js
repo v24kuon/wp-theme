@@ -6,33 +6,23 @@ import './style.css';
 
 registerBlockType(metadata.name, {
   edit: ({ attributes, setAttributes }) => {
-    const { tagName, isReverse, justifyContent } = attributes;
+    const { paddingY } = attributes;
     const blockProps = useBlockProps({
-      className: 'tagme-stack',
+      className: 'tagme-gutters',
       style: {
-      '--tagme-stack-justify-content': justifyContent
+      '--tagme-gutters-padding-y': paddingY
     }
     });
-    const TagName = tagName;
+    const TagName = 'div';
     return (
       <>
         <InspectorControls>
           <PanelBody title="Settings">
 
             <TextControl
-              label="tagName"
-              value={ tagName }
-              onChange={ (value) => setAttributes({ tagName: value }) }
-            />
-            <ToggleControl
-              label="isReverse"
-              checked={ !!isReverse }
-              onChange={ (value) => setAttributes({ isReverse: value }) }
-            />
-            <TextControl
-              label="justifyContent"
-              value={ justifyContent }
-              onChange={ (value) => setAttributes({ justifyContent: value }) }
+              label="paddingY"
+              value={ paddingY }
+              onChange={ (value) => setAttributes({ paddingY: value }) }
             />
           </PanelBody>
         </InspectorControls>
@@ -43,14 +33,14 @@ registerBlockType(metadata.name, {
     );
   },
   save: ({ attributes }) => {
-    const { tagName, isReverse, justifyContent } = attributes;
+    const { paddingY } = attributes;
     const blockProps = useBlockProps.save({
-      className: 'tagme-stack',
+      className: 'tagme-gutters',
       style: {
-      '--tagme-stack-justify-content': justifyContent
+      '--tagme-gutters-padding-y': paddingY
     }
     });
-    const TagName = tagName;
+    const TagName = 'div';
     return (
       <TagName { ...blockProps }>
         <InnerBlocks.Content />

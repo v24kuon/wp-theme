@@ -1,9 +1,9 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "tagme/cluster",
+  "name": "tagme/responsive-grid",
   "version": "1.0.0",
-  "title": "Cluster",
+  "title": "Responsive Grid",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -27,17 +27,13 @@
     }
   },
   "attributes": {
-    "noWrap": {
-      "type": "boolean",
-      "default": false
-    },
-    "justifyContent": {
+    "gridMin": {
       "type": "string",
-      "default": "flex-start"
+      "default": "250px"
     },
-    "alignItems": {
+    "autoRepeat": {
       "type": "string",
-      "default": "center"
+      "default": "auto-fit"
     }
   },
   "textdomain": "tagme",

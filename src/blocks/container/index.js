@@ -6,33 +6,23 @@ import './style.css';
 
 registerBlockType(metadata.name, {
   edit: ({ attributes, setAttributes }) => {
-    const { tagName, isReverse, justifyContent } = attributes;
+    const { maxWidth } = attributes;
     const blockProps = useBlockProps({
-      className: 'tagme-stack',
+      className: 'tagme-container',
       style: {
-      '--tagme-stack-justify-content': justifyContent
+      '--tagme-container-max-width': maxWidth
     }
     });
-    const TagName = tagName;
+    const TagName = 'div';
     return (
       <>
         <InspectorControls>
           <PanelBody title="Settings">
 
             <TextControl
-              label="tagName"
-              value={ tagName }
-              onChange={ (value) => setAttributes({ tagName: value }) }
-            />
-            <ToggleControl
-              label="isReverse"
-              checked={ !!isReverse }
-              onChange={ (value) => setAttributes({ isReverse: value }) }
-            />
-            <TextControl
-              label="justifyContent"
-              value={ justifyContent }
-              onChange={ (value) => setAttributes({ justifyContent: value }) }
+              label="maxWidth"
+              value={ maxWidth }
+              onChange={ (value) => setAttributes({ maxWidth: value }) }
             />
           </PanelBody>
         </InspectorControls>
@@ -43,14 +33,14 @@ registerBlockType(metadata.name, {
     );
   },
   save: ({ attributes }) => {
-    const { tagName, isReverse, justifyContent } = attributes;
+    const { maxWidth } = attributes;
     const blockProps = useBlockProps.save({
-      className: 'tagme-stack',
+      className: 'tagme-container',
       style: {
-      '--tagme-stack-justify-content': justifyContent
+      '--tagme-container-max-width': maxWidth
     }
     });
-    const TagName = tagName;
+    const TagName = 'div';
     return (
       <TagName { ...blockProps }>
         <InnerBlocks.Content />

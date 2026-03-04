@@ -6,12 +6,10 @@ import './style.css';
 
 registerBlockType(metadata.name, {
   edit: ({ attributes, setAttributes }) => {
-    const { tagName, isReverse, justifyContent } = attributes;
+    const { tagName } = attributes;
     const blockProps = useBlockProps({
-      className: 'tagme-stack',
-      style: {
-      '--tagme-stack-justify-content': justifyContent
-    }
+      className: 'tagme-stack-divided',
+      style: {}
     });
     const TagName = tagName;
     return (
@@ -24,16 +22,6 @@ registerBlockType(metadata.name, {
               value={ tagName }
               onChange={ (value) => setAttributes({ tagName: value }) }
             />
-            <ToggleControl
-              label="isReverse"
-              checked={ !!isReverse }
-              onChange={ (value) => setAttributes({ isReverse: value }) }
-            />
-            <TextControl
-              label="justifyContent"
-              value={ justifyContent }
-              onChange={ (value) => setAttributes({ justifyContent: value }) }
-            />
           </PanelBody>
         </InspectorControls>
         <TagName { ...blockProps }>
@@ -43,12 +31,10 @@ registerBlockType(metadata.name, {
     );
   },
   save: ({ attributes }) => {
-    const { tagName, isReverse, justifyContent } = attributes;
+    const { tagName } = attributes;
     const blockProps = useBlockProps.save({
-      className: 'tagme-stack',
-      style: {
-      '--tagme-stack-justify-content': justifyContent
-    }
+      className: 'tagme-stack-divided',
+      style: {}
     });
     const TagName = tagName;
     return (

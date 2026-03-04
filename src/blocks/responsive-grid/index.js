@@ -6,13 +6,12 @@ import './style.css';
 
 registerBlockType(metadata.name, {
   edit: ({ attributes, setAttributes }) => {
-    const { noWrap, justifyContent, alignItems } = attributes;
+    const { gridMin, autoRepeat } = attributes;
     const blockProps = useBlockProps({
-      className: 'tagme-cluster',
+      className: 'tagme-responsive-grid',
       style: {
-      '--tagme-cluster-wrap': noWrap ? 'nowrap' : 'wrap',
-      '--tagme-cluster-justify-content': justifyContent,
-      '--tagme-cluster-align-items': alignItems
+      '--tagme-grid-min': gridMin,
+      '--tagme-grid-auto-repeat': autoRepeat
     }
     });
     const TagName = 'div';
@@ -21,20 +20,15 @@ registerBlockType(metadata.name, {
         <InspectorControls>
           <PanelBody title="Settings">
 
-            <ToggleControl
-              label="noWrap"
-              checked={ !!noWrap }
-              onChange={ (value) => setAttributes({ noWrap: value }) }
+            <TextControl
+              label="gridMin"
+              value={ gridMin }
+              onChange={ (value) => setAttributes({ gridMin: value }) }
             />
             <TextControl
-              label="justifyContent"
-              value={ justifyContent }
-              onChange={ (value) => setAttributes({ justifyContent: value }) }
-            />
-            <TextControl
-              label="alignItems"
-              value={ alignItems }
-              onChange={ (value) => setAttributes({ alignItems: value }) }
+              label="autoRepeat"
+              value={ autoRepeat }
+              onChange={ (value) => setAttributes({ autoRepeat: value }) }
             />
           </PanelBody>
         </InspectorControls>
@@ -45,13 +39,12 @@ registerBlockType(metadata.name, {
     );
   },
   save: ({ attributes }) => {
-    const { noWrap, justifyContent, alignItems } = attributes;
+    const { gridMin, autoRepeat } = attributes;
     const blockProps = useBlockProps.save({
-      className: 'tagme-cluster',
+      className: 'tagme-responsive-grid',
       style: {
-      '--tagme-cluster-wrap': noWrap ? 'nowrap' : 'wrap',
-      '--tagme-cluster-justify-content': justifyContent,
-      '--tagme-cluster-align-items': alignItems
+      '--tagme-grid-min': gridMin,
+      '--tagme-grid-auto-repeat': autoRepeat
     }
     });
     const TagName = 'div';

@@ -1,0 +1,5 @@
+.tagme-with-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}

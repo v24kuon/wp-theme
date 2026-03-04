@@ -1,0 +1,4 @@
+.tagme-stack-divided {
+  display: flex;
+  flex-direction: column;
+}

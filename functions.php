@@ -48,7 +48,12 @@ function tagme_register_blocks() {
 	// Our output directory will be build/blocks
 	$blocks_dir = get_theme_file_path( '/build/blocks' );
 
-	$block_folders = array( 'stack', 'cluster', 'grid' );
+	if ( ! is_dir( $blocks_dir ) ) {
+		return;
+	}
+
+	// Get all block folders dynamically
+	$block_folders = array_diff( scandir( $blocks_dir ), array( '..', '.' ) );
 
 	foreach ( $block_folders as $folder ) {
 		$block_path = $blocks_dir . '/' . $folder;

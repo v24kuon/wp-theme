@@ -1,9 +1,9 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "tagme/cluster",
+  "name": "tagme/responsive-image",
   "version": "1.0.0",
-  "title": "Cluster",
+  "title": "Responsive Image",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -26,20 +26,7 @@
       "lineHeight": true
     }
   },
-  "attributes": {
-    "noWrap": {
-      "type": "boolean",
-      "default": false
-    },
-    "justifyContent": {
-      "type": "string",
-      "default": "flex-start"
-    },
-    "alignItems": {
-      "type": "string",
-      "default": "center"
-    }
-  },
+  "attributes": {},
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
   "style": "file:./style.css"

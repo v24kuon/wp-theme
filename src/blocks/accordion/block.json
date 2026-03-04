@@ -1,9 +1,9 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "tagme/cluster",
+  "name": "tagme/accordion",
   "version": "1.0.0",
-  "title": "Cluster",
+  "title": "Accordion",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -27,17 +27,9 @@
     }
   },
   "attributes": {
-    "noWrap": {
+    "useLabel": {
       "type": "boolean",
-      "default": false
-    },
-    "justifyContent": {
-      "type": "string",
-      "default": "flex-start"
-    },
-    "alignItems": {
-      "type": "string",
-      "default": "center"
+      "default": true
     }
   },
   "textdomain": "tagme",

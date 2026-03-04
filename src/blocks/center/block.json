@@ -1,9 +1,9 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "tagme/cluster",
+  "name": "tagme/center",
   "version": "1.0.0",
-  "title": "Cluster",
+  "title": "Center",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -27,17 +27,13 @@
     }
   },
   "attributes": {
-    "noWrap": {
+    "textAlign": {
       "type": "boolean",
       "default": false
     },
-    "justifyContent": {
+    "maxWidth": {
       "type": "string",
-      "default": "flex-start"
-    },
-    "alignItems": {
-      "type": "string",
-      "default": "center"
+      "default": "100%"
     }
   },
   "textdomain": "tagme",

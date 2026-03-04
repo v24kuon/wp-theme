@@ -1,9 +1,9 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "tagme/cluster",
+  "name": "tagme/cluster-divided",
   "version": "1.0.0",
-  "title": "Cluster",
+  "title": "Cluster (Divided)",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -30,14 +30,6 @@
     "noWrap": {
       "type": "boolean",
       "default": false
-    },
-    "justifyContent": {
-      "type": "string",
-      "default": "flex-start"
-    },
-    "alignItems": {
-      "type": "string",
-      "default": "center"
     }
   },
   "textdomain": "tagme",

@@ -1,9 +1,9 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "tagme/cluster",
+  "name": "tagme/with-sidebar",
   "version": "1.0.0",
-  "title": "Cluster",
+  "title": "With Sidebar",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -27,17 +27,17 @@
     }
   },
   "attributes": {
-    "noWrap": {
-      "type": "boolean",
-      "default": false
-    },
-    "justifyContent": {
+    "sidebarSide": {
       "type": "string",
-      "default": "flex-start"
+      "default": "right"
     },
-    "alignItems": {
+    "sidebarWidth": {
       "type": "string",
-      "default": "center"
+      "default": "300px"
+    },
+    "mainMinWidth": {
+      "type": "string",
+      "default": "50%"
     }
   },
   "textdomain": "tagme",

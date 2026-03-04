@@ -6,13 +6,11 @@ import './style.css';
 
 registerBlockType(metadata.name, {
   edit: ({ attributes, setAttributes }) => {
-    const { noWrap, justifyContent, alignItems } = attributes;
+    const { alignItems } = attributes;
     const blockProps = useBlockProps({
-      className: 'tagme-cluster',
+      className: 'tagme-both-sides',
       style: {
-      '--tagme-cluster-wrap': noWrap ? 'nowrap' : 'wrap',
-      '--tagme-cluster-justify-content': justifyContent,
-      '--tagme-cluster-align-items': alignItems
+      '--tagme-both-sides-align-items': alignItems
     }
     });
     const TagName = 'div';
@@ -21,16 +19,6 @@ registerBlockType(metadata.name, {
         <InspectorControls>
           <PanelBody title="Settings">
 
-            <ToggleControl
-              label="noWrap"
-              checked={ !!noWrap }
-              onChange={ (value) => setAttributes({ noWrap: value }) }
-            />
-            <TextControl
-              label="justifyContent"
-              value={ justifyContent }
-              onChange={ (value) => setAttributes({ justifyContent: value }) }
-            />
             <TextControl
               label="alignItems"
               value={ alignItems }
@@ -45,13 +33,11 @@ registerBlockType(metadata.name, {
     );
   },
   save: ({ attributes }) => {
-    const { noWrap, justifyContent, alignItems } = attributes;
+    const { alignItems } = attributes;
     const blockProps = useBlockProps.save({
-      className: 'tagme-cluster',
+      className: 'tagme-both-sides',
       style: {
-      '--tagme-cluster-wrap': noWrap ? 'nowrap' : 'wrap',
-      '--tagme-cluster-justify-content': justifyContent,
-      '--tagme-cluster-align-items': alignItems
+      '--tagme-both-sides-align-items': alignItems
     }
     });
     const TagName = 'div';

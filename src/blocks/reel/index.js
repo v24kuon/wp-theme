@@ -6,33 +6,29 @@ import './style.css';
 
 registerBlockType(metadata.name, {
   edit: ({ attributes, setAttributes }) => {
-    const { tagName, isReverse, justifyContent } = attributes;
+    const { height, hideScrollbar } = attributes;
     const blockProps = useBlockProps({
-      className: 'tagme-stack',
+      className: 'tagme-reel',
       style: {
-      '--tagme-stack-justify-content': justifyContent
+      '--tagme-reel-height': height,
+      '--tagme-reel-scrollbar-width': hideScrollbar ? 'none' : 'auto'
     }
     });
-    const TagName = tagName;
+    const TagName = 'div';
     return (
       <>
         <InspectorControls>
           <PanelBody title="Settings">
 
             <TextControl
-              label="tagName"
-              value={ tagName }
-              onChange={ (value) => setAttributes({ tagName: value }) }
+              label="height"
+              value={ height }
+              onChange={ (value) => setAttributes({ height: value }) }
             />
             <ToggleControl
-              label="isReverse"
-              checked={ !!isReverse }
-              onChange={ (value) => setAttributes({ isReverse: value }) }
-            />
-            <TextControl
-              label="justifyContent"
-              value={ justifyContent }
-              onChange={ (value) => setAttributes({ justifyContent: value }) }
+              label="hideScrollbar"
+              checked={ !!hideScrollbar }
+              onChange={ (value) => setAttributes({ hideScrollbar: value }) }
             />
           </PanelBody>
         </InspectorControls>
@@ -43,14 +39,15 @@ registerBlockType(metadata.name, {
     );
   },
   save: ({ attributes }) => {
-    const { tagName, isReverse, justifyContent } = attributes;
+    const { height, hideScrollbar } = attributes;
     const blockProps = useBlockProps.save({
-      className: 'tagme-stack',
+      className: 'tagme-reel',
       style: {
-      '--tagme-stack-justify-content': justifyContent
+      '--tagme-reel-height': height,
+      '--tagme-reel-scrollbar-width': hideScrollbar ? 'none' : 'auto'
     }
     });
-    const TagName = tagName;
+    const TagName = 'div';
     return (
       <TagName { ...blockProps }>
         <InnerBlocks.Content />

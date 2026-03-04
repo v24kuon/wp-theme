@@ -1,0 +1,7 @@
+.tagme-frame {
+  aspect-ratio: var(--tagme-frame-aspect-ratio, 16/9);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

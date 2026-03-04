@@ -1,9 +1,9 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "tagme/cluster",
+  "name": "tagme/cover",
   "version": "1.0.0",
-  "title": "Cluster",
+  "title": "Cover",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -27,17 +27,13 @@
     }
   },
   "attributes": {
-    "noWrap": {
-      "type": "boolean",
-      "default": false
-    },
-    "justifyContent": {
+    "minHeight": {
       "type": "string",
-      "default": "flex-start"
+      "default": "100vh"
     },
-    "alignItems": {
+    "padding": {
       "type": "string",
-      "default": "center"
+      "default": "1rem"
     }
   },
   "textdomain": "tagme",

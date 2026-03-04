@@ -5,10 +5,12 @@
   "version": "1.0.0",
   "title": "Stack",
   "category": "layout",
-  "icon": "menu",
-  "description": "A layout primitive for vertically stacking elements.",
+  "icon": "layout",
   "supports": {
-    "align": ["wide", "full"],
+    "align": [
+      "wide",
+      "full"
+    ],
     "html": false,
     "spacing": {
       "margin": true,
@@ -24,7 +26,21 @@
       "lineHeight": true
     }
   },
+  "attributes": {
+    "tagName": {
+      "type": "string",
+      "default": "div"
+    },
+    "isReverse": {
+      "type": "boolean",
+      "default": false
+    },
+    "justifyContent": {
+      "type": "string",
+      "default": "flex-start"
+    }
+  },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css"
+  "style": "file:./style.css"
 }

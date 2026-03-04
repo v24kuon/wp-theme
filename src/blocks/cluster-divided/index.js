@@ -6,13 +6,11 @@ import './style.css';
 
 registerBlockType(metadata.name, {
   edit: ({ attributes, setAttributes }) => {
-    const { noWrap, justifyContent, alignItems } = attributes;
+    const { noWrap } = attributes;
     const blockProps = useBlockProps({
-      className: 'tagme-cluster',
+      className: 'tagme-cluster-divided',
       style: {
-      '--tagme-cluster-wrap': noWrap ? 'nowrap' : 'wrap',
-      '--tagme-cluster-justify-content': justifyContent,
-      '--tagme-cluster-align-items': alignItems
+      '--tagme-cluster-divided-wrap': noWrap ? 'nowrap' : 'wrap'
     }
     });
     const TagName = 'div';
@@ -26,16 +24,6 @@ registerBlockType(metadata.name, {
               checked={ !!noWrap }
               onChange={ (value) => setAttributes({ noWrap: value }) }
             />
-            <TextControl
-              label="justifyContent"
-              value={ justifyContent }
-              onChange={ (value) => setAttributes({ justifyContent: value }) }
-            />
-            <TextControl
-              label="alignItems"
-              value={ alignItems }
-              onChange={ (value) => setAttributes({ alignItems: value }) }
-            />
           </PanelBody>
         </InspectorControls>
         <TagName { ...blockProps }>
@@ -45,13 +33,11 @@ registerBlockType(metadata.name, {
     );
   },
   save: ({ attributes }) => {
-    const { noWrap, justifyContent, alignItems } = attributes;
+    const { noWrap } = attributes;
     const blockProps = useBlockProps.save({
-      className: 'tagme-cluster',
+      className: 'tagme-cluster-divided',
       style: {
-      '--tagme-cluster-wrap': noWrap ? 'nowrap' : 'wrap',
-      '--tagme-cluster-justify-content': justifyContent,
-      '--tagme-cluster-align-items': alignItems
+      '--tagme-cluster-divided-wrap': noWrap ? 'nowrap' : 'wrap'
     }
     });
     const TagName = 'div';
