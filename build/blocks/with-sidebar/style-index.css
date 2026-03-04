@@ -1,0 +1,1 @@
+.tagme-with-sidebar{align-items:flex-start;display:flex;flex-wrap:wrap;&>:first-child{flex-basis:var(--tagme-with-sidebar-sidebar-width,300px);flex-grow:1}&>:last-child{flex-basis:0;flex-grow:999;min-width:var(--tagme-with-sidebar-main-min-width,50%)}}

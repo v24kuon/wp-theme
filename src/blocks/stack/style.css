@@ -1,4 +1,5 @@
 .tagme-stack {
   display: flex;
   flex-direction: column;
+  justify-content: var(--tagme-stack-justify-content, flex-start);
 }

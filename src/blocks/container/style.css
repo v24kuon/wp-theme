@@ -1,0 +1,4 @@
+.tagme-container {
+  margin-inline: auto;
+  max-width: var(--tagme-container-max-width, 1000px);
+}

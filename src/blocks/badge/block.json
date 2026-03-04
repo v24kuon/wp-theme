@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tagme/badge",
+  "version": "1.0.0",
+  "title": "Badge",
+  "category": "layout",
+  "icon": "layout",
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    },
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    }
+  },
+  "attributes": {
+    "shape": {
+      "type": "string",
+      "default": "rounded"
+    },
+    "size": {
+      "type": "string",
+      "default": "0.85em"
+    }
+  },
+  "textdomain": "tagme",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

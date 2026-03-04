@@ -5,8 +5,7 @@
   "version": "1.0.0",
   "title": "Cluster",
   "category": "layout",
-  "icon": "grid-view",
-  "description": "A layout primitive for grouping elements together horizontally that wrap if space is limited.",
+  "icon": "layout",
   "supports": {
     "align": [
       "wide",
@@ -25,6 +24,20 @@
     "typography": {
       "fontSize": true,
       "lineHeight": true
+    }
+  },
+  "attributes": {
+    "noWrap": {
+      "type": "boolean",
+      "default": false
+    },
+    "justifyContent": {
+      "type": "string",
+      "default": "flex-start"
+    },
+    "alignItems": {
+      "type": "string",
+      "default": "center"
     }
   },
   "textdomain": "tagme",

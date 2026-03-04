@@ -1,0 +1,4 @@
+.tagme-text {
+  max-width: var(--tagme-text-max-width, 60ch);
+  margin-inline: auto;
+}
