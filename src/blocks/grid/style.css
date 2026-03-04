@@ -1,0 +1,4 @@
+.tagme-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--tagme-grid-columns, 3), 1fr);
+}
