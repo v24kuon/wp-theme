@@ -4,4 +4,7 @@
   overflow-y: hidden;
   height: var(--tagme-reel-height, auto);
   scrollbar-width: var(--tagme-reel-scrollbar-width, auto);
+  & > * {
+    flex: 0 0 auto;
+  }
 }

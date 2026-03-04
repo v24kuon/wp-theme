@@ -1,4 +1,8 @@
 .tagme-cluster-divided {
   display: flex;
   flex-wrap: wrap;
+  & > * + * {
+    border-left: 1px solid currentColor;
+    padding-left: var(--tagme-cluster-divided-padding, 1rem);
+  }
 }

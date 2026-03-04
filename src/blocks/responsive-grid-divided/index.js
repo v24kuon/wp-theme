@@ -10,7 +10,7 @@ registerBlockType(metadata.name, {
     const blockProps = useBlockProps({
       className: 'tagme-responsive-grid-divided',
       style: {
-      '--tagme-responsive-grid-divided-grid-min': gridMin
+      '--tagme-grid-min': gridMin
     }
     });
     const TagName = 'div';
@@ -37,7 +37,7 @@ registerBlockType(metadata.name, {
     const blockProps = useBlockProps.save({
       className: 'tagme-responsive-grid-divided',
       style: {
-      '--tagme-responsive-grid-divided-grid-min': gridMin
+      '--tagme-grid-min': gridMin
     }
     });
     const TagName = 'div';
