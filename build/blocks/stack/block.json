@@ -3,10 +3,9 @@
   "apiVersion": 3,
   "name": "tagme/stack",
   "version": "1.0.0",
-  "title": "Stack",
+  "title": "スタック",
   "category": "layout",
-  "icon": "menu",
-  "description": "A layout primitive for vertically stacking elements.",
+  "icon": "layout",
   "supports": {
     "align": [
       "wide",
@@ -25,6 +24,20 @@
     "typography": {
       "fontSize": true,
       "lineHeight": true
+    }
+  },
+  "attributes": {
+    "tagName": {
+      "type": "string",
+      "default": "div"
+    },
+    "isReverse": {
+      "type": "boolean",
+      "default": false
+    },
+    "justifyContent": {
+      "type": "string",
+      "default": "flex-start"
     }
   },
   "textdomain": "tagme",
