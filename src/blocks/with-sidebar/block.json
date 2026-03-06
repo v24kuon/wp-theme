@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/with-sidebar",
   "version": "1.0.0",
-  "title": "With Sidebar",
+  "title": "サイドバー",
   "category": "layout",
   "icon": "layout",
   "supports": {

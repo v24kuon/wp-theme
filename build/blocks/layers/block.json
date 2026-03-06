@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/layers",
   "version": "1.0.0",
-  "title": "Layers",
+  "title": "レイヤー",
   "category": "layout",
   "icon": "layout",
   "supports": {

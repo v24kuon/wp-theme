@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/responsive-grid",
   "version": "1.0.0",
-  "title": "Responsive Grid",
+  "title": "レスポンシブグリッド",
   "category": "layout",
   "icon": "layout",
   "supports": {

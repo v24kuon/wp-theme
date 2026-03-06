@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/stack-divided",
   "version": "1.0.0",
-  "title": "Stack (Divided)",
+  "title": "スタック (区切りあり)",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -30,6 +30,10 @@
     "tagName": {
       "type": "string",
       "default": "div"
+    },
+    "isReverse": {
+      "type": "boolean",
+      "default": false
     }
   },
   "textdomain": "tagme",

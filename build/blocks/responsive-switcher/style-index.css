@@ -1,1 +1,1 @@
-.tagme-responsive-switcher{display:block}
+.tagme-responsive-switcher{display:flex;flex-wrap:wrap}.tagme-responsive-switcher>*{flex-basis:calc((var(--tagme-responsive-switcher-breakpoint, 768px) - 100%)*999);flex-grow:1}.tagme-responsive-switcher>:nth-last-child(n+2),.tagme-responsive-switcher>:nth-last-child(n+2)~*{min-width:100%}

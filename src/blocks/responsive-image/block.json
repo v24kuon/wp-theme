@@ -3,30 +3,19 @@
   "apiVersion": 3,
   "name": "tagme/responsive-image",
   "version": "1.0.0",
-  "title": "Responsive Image",
-  "category": "layout",
-  "icon": "layout",
+  "title": "レスポンシブ画像",
+  "category": "media",
+  "icon": "format-image",
   "supports": {
-    "align": [
-      "wide",
-      "full"
-    ],
+    "align": ["wide", "full"],
     "html": false,
-    "spacing": {
-      "margin": true,
-      "padding": true,
-      "blockGap": true
-    },
-    "color": {
-      "background": true,
-      "text": true
-    },
-    "typography": {
-      "fontSize": true,
-      "lineHeight": true
-    }
+    "spacing": { "margin": true, "padding": true },
+    "color": { "background": true, "text": true }
   },
-  "attributes": {},
+  "attributes": {
+    "imageUrl": { "type": "string" },
+    "alt": { "type": "string", "default": "" }
+  },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
   "style": "file:./style-index.css"

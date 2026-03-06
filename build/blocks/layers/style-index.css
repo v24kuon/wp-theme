@@ -1,1 +1,1 @@
-.tagme-layers{display:grid;grid-template-areas:"layer";&>*{grid-area:layer;-ms-grid-column:1;-ms-grid-row:1}}
+.tagme-layers{display:grid;grid-template-areas:"layer";&>*{grid-area:layer;-ms-grid-column:1;-ms-grid-row:1}}.tagme-layers>:first-child{height:100%;width:100%;z-index:-1}.tagme-layers[style*="--tagme-layers-background-behavior: cover"]>:first-child{-o-object-fit:cover;object-fit:cover}.tagme-layers[style*="--tagme-layers-background-behavior: fixed"]>:first-child{-o-object-fit:cover;object-fit:cover;position:fixed}

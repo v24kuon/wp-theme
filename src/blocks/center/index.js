@@ -1,6 +1,6 @@
 import { registerBlockType } from '@wordpress/blocks';
 import { useBlockProps, InnerBlocks, InspectorControls } from '@wordpress/block-editor';
-import { PanelBody, TextControl, ToggleControl, SelectControl } from '@wordpress/components';
+import { PanelBody, TextControl, ToggleControl, SelectControl, __experimentalUnitControl } from '@wordpress/components';
 import metadata from './block.json';
 import './style.css';
 
@@ -18,15 +18,15 @@ registerBlockType(metadata.name, {
     return (
       <>
         <InspectorControls>
-          <PanelBody title="Settings">
+          <PanelBody title="レイアウト設定">
 
             <ToggleControl
-              label="textAlign"
+              label="テキストを中央揃え"
               checked={ !!textAlign }
               onChange={ (value) => setAttributes({ textAlign: value }) }
             />
-            <TextControl
-              label="maxWidth"
+            <__experimentalUnitControl
+              label="最大幅"
               value={ maxWidth }
               onChange={ (value) => setAttributes({ maxWidth: value }) }
             />

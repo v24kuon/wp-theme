@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/decorator",
   "version": "1.0.0",
-  "title": "Decorator",
+  "title": "デコレーター",
   "category": "layout",
   "icon": "layout",
   "supports": {

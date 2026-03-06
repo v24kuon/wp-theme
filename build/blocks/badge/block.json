@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/badge",
   "version": "1.0.0",
-  "title": "Badge",
+  "title": "バッジ",
   "category": "layout",
   "icon": "layout",
   "supports": {

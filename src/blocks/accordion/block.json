@@ -3,14 +3,11 @@
   "apiVersion": 3,
   "name": "tagme/accordion",
   "version": "1.0.0",
-  "title": "Accordion",
+  "title": "アコーディオン",
   "category": "layout",
   "icon": "layout",
   "supports": {
-    "align": [
-      "wide",
-      "full"
-    ],
+    "align": ["wide", "full"],
     "html": false,
     "spacing": {
       "margin": true,
@@ -30,6 +27,12 @@
     "useLabel": {
       "type": "boolean",
       "default": true
+    },
+    "summaryText": {
+      "type": "string",
+      "source": "html",
+      "selector": "summary",
+      "default": "アコーディオンを開く"
     }
   },
   "textdomain": "tagme",

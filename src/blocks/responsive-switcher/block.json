@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/responsive-switcher",
   "version": "1.0.0",
-  "title": "Responsive Switcher",
+  "title": "レスポンシブスイッチャー",
   "category": "layout",
   "icon": "layout",
   "supports": {

@@ -1,46 +1,55 @@
 import { registerBlockType } from '@wordpress/blocks';
-import { useBlockProps, InnerBlocks, InspectorControls } from '@wordpress/block-editor';
-import { PanelBody, TextControl, ToggleControl, SelectControl } from '@wordpress/components';
+import { useBlockProps, InnerBlocks, InspectorControls, RichText } from '@wordpress/block-editor';
+import { PanelBody, ToggleControl } from '@wordpress/components';
 import metadata from './block.json';
 import './style.css';
 
 registerBlockType(metadata.name, {
   edit: ({ attributes, setAttributes }) => {
-    const { useLabel } = attributes;
-    const blockProps = useBlockProps({
-      className: 'tagme-accordion',
-      style: {}
-    });
-    const TagName = 'div';
+    const { useLabel, summaryText } = attributes;
+    const blockProps = useBlockProps({ className: 'tagme-accordion' });
     return (
       <>
         <InspectorControls>
-          <PanelBody title="Settings">
-
+          <PanelBody title="レイアウト設定">
             <ToggleControl
-              label="useLabel"
+              label="ラベルを使用"
               checked={ !!useLabel }
               onChange={ (value) => setAttributes({ useLabel: value }) }
             />
           </PanelBody>
         </InspectorControls>
-        <TagName { ...blockProps }>
-          <InnerBlocks />
-        </TagName>
+        <details { ...blockProps } open>
+          {useLabel && (
+            <RichText
+              tagName="summary"
+              value={summaryText}
+              onChange={(value) => setAttributes({ summaryText: value })}
+              placeholder="アコーディオンのラベルを入力..."
+            />
+          )}
+          <div className="tagme-accordion-content">
+            <InnerBlocks />
+          </div>
+        </details>
       </>
     );
   },
   save: ({ attributes }) => {
-    const { useLabel } = attributes;
-    const blockProps = useBlockProps.save({
-      className: 'tagme-accordion',
-      style: {}
-    });
-    const TagName = 'div';
+    const { useLabel, summaryText } = attributes;
+    const blockProps = useBlockProps.save({ className: 'tagme-accordion' });
     return (
-      <TagName { ...blockProps }>
-        <InnerBlocks.Content />
-      </TagName>
+      <details { ...blockProps }>
+        {useLabel && (
+          <RichText.Content
+            tagName="summary"
+            value={summaryText}
+          />
+        )}
+        <div className="tagme-accordion-content">
+          <InnerBlocks.Content />
+        </div>
+      </details>
     );
   }
 });

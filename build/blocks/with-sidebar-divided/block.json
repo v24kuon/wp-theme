@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/with-sidebar-divided",
   "version": "1.0.0",
-  "title": "With Sidebar (Divided)",
+  "title": "サイドバー (区切りあり)",
   "category": "layout",
   "icon": "layout",
   "supports": {

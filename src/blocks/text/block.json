@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/text",
   "version": "1.0.0",
-  "title": "Text",
+  "title": "テキスト",
   "category": "layout",
   "icon": "layout",
   "supports": {
