@@ -1,24 +1,19 @@
 .tagme-reel {
-  display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
-  height: var(--tagme-reel-height, auto);
-  scrollbar-width: var(--tagme-reel-scrollbar-width, auto);
-  & > * {
-    flex: 0 0 auto;
-  }
+	display: flex;
+	overflow-x: auto;
+	overflow-y: hidden;
+	height: var(--tagme-reel-height, auto);
+	scrollbar-width: var(--tagme-reel-scrollbar-width, auto);
+
+	> * {
+		flex: 0 0 auto;
+	}
 }
 
 .tagme-reel[data-hide-scrollbar="true"] {
-  scrollbar-width: none;
-}
-.tagme-reel[data-hide-scrollbar="true"]::-webkit-scrollbar {
-  display: none;
+	scrollbar-width: none;
 }
 
-.tagme-reel[data-hide-scrollbar="true"] {
-  scrollbar-width: none;
-}
 .tagme-reel[data-hide-scrollbar="true"]::-webkit-scrollbar {
-  display: none;
+	display: none;
 }

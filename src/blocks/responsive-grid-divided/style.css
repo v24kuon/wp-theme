@@ -1,33 +1,11 @@
 .tagme-responsive-grid-divided {
-  display: grid;
-  grid-template-columns: repeat(var(--tagme-grid-auto-repeat, auto-fit), minmax(min(var(--tagme-grid-min, 250px), 100%), 1fr));
-  gap: 1rem;
-  & > * {
-    border: 1px solid currentColor;
-    padding: 1rem;
-  }
-}
+	display: grid;
+	grid-template-columns: repeat(var(--tagme-grid-auto-repeat, auto-fit), minmax(min(var(--tagme-grid-min, 250px), 100%), 1fr));
+	gap: 1rem;
 
-.tagme-responsive-grid-divided {
-  display: grid;
-  grid-template-columns: repeat(var(--tagme-responsive-grid-divided-auto-repeat, auto-fit), minmax(min(var(--tagme-responsive-grid-divided-grid-min, 250px), 100%), 1fr));
-  align-content: var(--tagme-responsive-grid-divided-align-content, stretch);
-  gap: 1px;
-  background-color: currentColor;
-}
-.tagme-responsive-grid-divided > * {
-  background-color: var(--wp--preset--color--base, #fff);
-  padding: var(--tagme-responsive-grid-divided-padding, 1rem);
-}
-
-.tagme-responsive-grid-divided {
-  display: grid;
-  grid-template-columns: repeat(var(--tagme-responsive-grid-divided-auto-repeat, auto-fit), minmax(min(var(--tagme-responsive-grid-divided-grid-min, 250px), 100%), 1fr));
-  align-content: var(--tagme-responsive-grid-divided-align-content, stretch);
-  gap: 1px;
-  background-color: currentColor;
-}
-.tagme-responsive-grid-divided > * {
-  background-color: var(--wp--preset--color--base, #fff);
-  padding: var(--tagme-responsive-grid-divided-padding, 1rem);
+	> * {
+		border: 1px solid currentcolor;
+		padding: var(--tagme-responsive-grid-divided-padding, 1rem);
+		background-color: var(--wp--preset--color--base, #fff);
+	}
 }

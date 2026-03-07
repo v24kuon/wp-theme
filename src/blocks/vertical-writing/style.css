@@ -1,28 +1,11 @@
 .tagme-vertical-writing {
-  writing-mode: vertical-rl;
-  text-orientation: var(--tagme-vertical-writing-text-orientation, mixed);
+	writing-mode: vertical-rl;
+	text-orientation: var(--tagme-vertical-writing-text-orientation, mixed);
 }
 
-.tagme-vertical-writing {
-  writing-mode: vertical-rl;
-  text-orientation: var(--tagme-vertical-writing-text-orientation, mixed);
-  max-width: var(--tagme-vertical-writing-max-width, 100%);
-  max-height: var(--tagme-vertical-writing-max-height, 100%);
-}
 @media (orientation: portrait) {
-  .tagme-vertical-writing[data-switch-portrait="true"] {
-    writing-mode: horizontal-tb;
-  }
-}
 
-.tagme-vertical-writing {
-  writing-mode: vertical-rl;
-  text-orientation: var(--tagme-vertical-writing-text-orientation, mixed);
-  max-width: var(--tagme-vertical-writing-max-width, 100%);
-  max-height: var(--tagme-vertical-writing-max-height, 100%);
-}
-@media (orientation: portrait) {
-  .tagme-vertical-writing[data-switch-portrait="true"] {
-    writing-mode: horizontal-tb;
-  }
+	.tagme-vertical-writing[data-switch-portrait="true"] {
+		writing-mode: horizontal-tb;
+	}
 }

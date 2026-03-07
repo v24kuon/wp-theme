@@ -1,12 +1,4 @@
 .tagme-container {
-  margin-inline: auto;
-  max-width: var(--tagme-container-max-width, 1000px);
-}
-
-.tagme-container {
-  padding: var(--tagme-container-padding, 0);
-}
-
-.tagme-container {
-  padding: var(--tagme-container-padding, 0);
+	margin-inline: auto;
+	max-width: var(--tagme-container-max-width, 1000px);
 }

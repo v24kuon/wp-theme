@@ -1,18 +1,9 @@
 .tagme-cluster-divided {
-  display: flex;
-  flex-wrap: var(--tagme-cluster-divided-wrap, wrap);
-  & > * + * {
-    border-left: 1px solid currentColor;
-    padding-left: var(--tagme-cluster-divided-padding, 1rem);
-  }
-}
+	display: flex;
+	flex-wrap: var(--tagme-cluster-divided-wrap, wrap);
 
-.tagme-cluster-divided {
-  flex-wrap: var(--tagme-cluster-divided-no-wrap, wrap);
-  justify-content: var(--tagme-cluster-divided-justify-content, flex-start);
-}
-
-.tagme-cluster-divided {
-  flex-wrap: var(--tagme-cluster-divided-no-wrap, wrap);
-  justify-content: var(--tagme-cluster-divided-justify-content, flex-start);
+	> * + * {
+		border-left: 1px solid currentcolor;
+		padding-left: var(--tagme-cluster-divided-padding, 1rem);
+	}
 }
