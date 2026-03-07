@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/badge",
   "version": "1.0.0",
-  "title": "Badge",
+  "title": "バッジ",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -38,5 +38,6 @@
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css"
+  "style": "file:./style-index.css",
+  "description": "テキストにバッジ（ラベル）スタイルを適用するブロックです。"
 }

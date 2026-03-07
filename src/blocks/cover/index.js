@@ -1,6 +1,6 @@
 import { registerBlockType } from '@wordpress/blocks';
 import { useBlockProps, InnerBlocks, InspectorControls } from '@wordpress/block-editor';
-import { PanelBody, TextControl, ToggleControl, SelectControl } from '@wordpress/components';
+import { PanelBody, TextControl, ToggleControl, SelectControl, __experimentalUnitControl } from '@wordpress/components';
 import metadata from './block.json';
 import './style.css';
 
@@ -18,15 +18,15 @@ registerBlockType(metadata.name, {
     return (
       <>
         <InspectorControls>
-          <PanelBody title="Settings">
+          <PanelBody title="レイアウト設定">
 
-            <TextControl
-              label="minHeight"
+            <__experimentalUnitControl
+              label="最小の高さ"
               value={ minHeight }
               onChange={ (value) => setAttributes({ minHeight: value }) }
             />
-            <TextControl
-              label="padding"
+            <__experimentalUnitControl
+              label="パディング"
               value={ padding }
               onChange={ (value) => setAttributes({ padding: value }) }
             />

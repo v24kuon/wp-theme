@@ -1,1 +1,1 @@
-.tagme-vertical-writing{text-orientation:var(--tagme-vertical-writing-text-orientation,mixed);writing-mode:vertical-rl}
+.tagme-vertical-writing{max-height:var(--tagme-vertical-writing-max-height,100%);max-width:var(--tagme-vertical-writing-max-width,100%);text-orientation:var(--tagme-vertical-writing-text-orientation,mixed);writing-mode:vertical-rl}@media (orientation:portrait){.tagme-vertical-writing[data-switch-portrait=true]{writing-mode:horizontal-tb}}

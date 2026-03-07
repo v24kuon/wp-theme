@@ -1,6 +1,6 @@
 import { registerBlockType } from '@wordpress/blocks';
 import { useBlockProps, InnerBlocks, InspectorControls } from '@wordpress/block-editor';
-import { PanelBody, TextControl, ToggleControl, SelectControl } from '@wordpress/components';
+import { PanelBody, TextControl, ToggleControl, SelectControl, __experimentalUnitControl } from '@wordpress/components';
 import metadata from './block.json';
 import './style.css';
 
@@ -9,6 +9,12 @@ registerBlockType(metadata.name, {
     const { shape, size } = attributes;
     const blockProps = useBlockProps({
       className: 'tagme-badge',
+      'data-shape': shape,
+      'data-shape': shape,
+      'data-shape': shape,
+      'data-shape': shape,
+            'data-shape': shape,
+            'data-shape': shape,
       style: {
       '--tagme-badge-shape': shape,
       '--tagme-badge-size': size
@@ -18,14 +24,14 @@ registerBlockType(metadata.name, {
     return (
       <>
         <InspectorControls>
-          <PanelBody title="Settings">
+          <PanelBody title="レイアウト設定">
 
-            <TextControl
+            <__experimentalUnitControl
               label="shape"
               value={ shape }
               onChange={ (value) => setAttributes({ shape: value }) }
             />
-            <TextControl
+            <__experimentalUnitControl
               label="size"
               value={ size }
               onChange={ (value) => setAttributes({ size: value }) }
@@ -42,6 +48,10 @@ registerBlockType(metadata.name, {
     const { shape, size } = attributes;
     const blockProps = useBlockProps.save({
       className: 'tagme-badge',
+      'data-shape': shape,
+      'data-shape': shape,
+            'data-shape': shape,
+            'data-shape': shape,
       style: {
       '--tagme-badge-shape': shape,
       '--tagme-badge-size': size

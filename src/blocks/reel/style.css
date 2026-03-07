@@ -8,3 +8,17 @@
     flex: 0 0 auto;
   }
 }
+
+.tagme-reel[data-hide-scrollbar="true"] {
+  scrollbar-width: none;
+}
+.tagme-reel[data-hide-scrollbar="true"]::-webkit-scrollbar {
+  display: none;
+}
+
+.tagme-reel[data-hide-scrollbar="true"] {
+  scrollbar-width: none;
+}
+.tagme-reel[data-hide-scrollbar="true"]::-webkit-scrollbar {
+  display: none;
+}

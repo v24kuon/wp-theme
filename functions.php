@@ -52,11 +52,10 @@ function tagme_register_blocks() {
 		return;
 	}
 
-	// Get all block folders dynamically
-	$block_folders = array_diff( scandir( $blocks_dir ), array( '..', '.' ) );
+	// Get all block folders dynamically safely
+	$block_folders = glob( $blocks_dir . '/*', GLOB_ONLYDIR );
 
-	foreach ( $block_folders as $folder ) {
-		$block_path = $blocks_dir . '/' . $folder;
+	foreach ( $block_folders as $block_path ) {
 		if ( file_exists( $block_path . '/block.json' ) ) {
 			register_block_type( $block_path );
 		}

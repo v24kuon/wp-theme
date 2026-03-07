@@ -1,4 +1,37 @@
 .tagme-decorator {
   display: block;
   position: relative;
+  backdrop-filter: var(--tagme-decorator-backdrop-filter, none);
+}
+
+.tagme-decorator {
+  max-width: var(--tagme-decorator-max-width, none);
+  min-width: var(--tagme-decorator-min-width, 0);
+  max-height: var(--tagme-decorator-max-height, none);
+  min-height: var(--tagme-decorator-min-height, 0);
+  justify-items: var(--tagme-decorator-justify-items, stretch);
+  align-content: var(--tagme-decorator-align-content, stretch);
+  padding: var(--tagme-decorator-padding, 0);
+  overflow: var(--tagme-decorator-overflow, visible);
+}
+.tagme-decorator[data-background-clip="true"] {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.tagme-decorator {
+  max-width: var(--tagme-decorator-max-width, none);
+  min-width: var(--tagme-decorator-min-width, 0);
+  max-height: var(--tagme-decorator-max-height, none);
+  min-height: var(--tagme-decorator-min-height, 0);
+  justify-items: var(--tagme-decorator-justify-items, stretch);
+  align-content: var(--tagme-decorator-align-content, stretch);
+  padding: var(--tagme-decorator-padding, 0);
+  overflow: var(--tagme-decorator-overflow, visible);
+}
+.tagme-decorator[data-background-clip="true"] {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }

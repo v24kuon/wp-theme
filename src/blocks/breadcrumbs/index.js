@@ -1,50 +1,37 @@
 import { registerBlockType } from '@wordpress/blocks';
-import { useBlockProps, InnerBlocks, InspectorControls } from '@wordpress/block-editor';
-import { PanelBody, TextControl, ToggleControl, SelectControl } from '@wordpress/components';
+import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
+import { PanelBody, TextControl } from '@wordpress/components';
 import metadata from './block.json';
 import './style.css';
 
 registerBlockType(metadata.name, {
   edit: ({ attributes, setAttributes }) => {
     const { separator } = attributes;
-    const blockProps = useBlockProps({
-      className: 'tagme-breadcrumbs',
-      style: {
-      '--tagme-breadcrumbs-separator': separator
-    }
-    });
-    const TagName = 'div';
+    const blockProps = useBlockProps({ className: 'tagme-breadcrumbs' });
     return (
       <>
         <InspectorControls>
-          <PanelBody title="Settings">
+          <PanelBody title="レイアウト設定">
 
-            <TextControl
-              label="separator"
+            <__experimentalUnitControl
+              label="区切り文字"
               value={ separator }
               onChange={ (value) => setAttributes({ separator: value }) }
             />
           </PanelBody>
         </InspectorControls>
-        <TagName { ...blockProps }>
-          <InnerBlocks />
-        </TagName>
+        <nav aria-label="Breadcrumb" { ...blockProps }>
+          <ol>
+            <li><a href="#">ホーム</a> {separator} </li>
+            <li><a href="#">カテゴリー</a> {separator} </li>
+            <li aria-current="page">現在のページ (編集中)</li>
+          </ol>
+        </nav>
       </>
     );
   },
-  save: ({ attributes }) => {
-    const { separator } = attributes;
-    const blockProps = useBlockProps.save({
-      className: 'tagme-breadcrumbs',
-      style: {
-      '--tagme-breadcrumbs-separator': separator
-    }
-    });
-    const TagName = 'div';
-    return (
-      <TagName { ...blockProps }>
-        <InnerBlocks.Content />
-      </TagName>
-    );
+  save: () => {
+    // Rendered dynamically via render.php
+    return null;
   }
 });

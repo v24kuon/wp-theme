@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/responsive-grid",
   "version": "1.0.0",
-  "title": "Responsive Grid",
+  "title": "レスポンシブグリッド",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -34,9 +34,14 @@
     "autoRepeat": {
       "type": "string",
       "default": "auto-fit"
+    },
+    "stairs": {
+      "type": "boolean",
+      "default": false
     }
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css"
+  "style": "file:./style-index.css",
+  "description": "画面幅に応じてカラム数が自動的に変化するグリッドレイアウトブロックです。"
 }

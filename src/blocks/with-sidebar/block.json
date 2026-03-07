@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/with-sidebar",
   "version": "1.0.0",
-  "title": "With Sidebar",
+  "title": "サイドバー",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -38,9 +38,22 @@
     "mainMinWidth": {
       "type": "string",
       "default": "50%"
+    },
+    "isReverse": {
+      "type": "boolean",
+      "default": false
+    },
+    "alignItems": {
+      "type": "string",
+      "default": "stretch"
+    },
+    "overflow": {
+      "type": "string",
+      "default": ""
     }
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css"
+  "style": "file:./style-index.css",
+  "description": "メインコンテンツとサイドバーを持つレイアウトブロックです。"
 }

@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/responsive-grid-divided",
   "version": "1.0.0",
-  "title": "Responsive Grid (Divided)",
+  "title": "レスポンシブグリッド (区切りあり)",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -30,9 +30,26 @@
     "gridMin": {
       "type": "string",
       "default": "250px"
+    },
+    "tagName": {
+      "type": "string",
+      "default": "div"
+    },
+    "autoRepeat": {
+      "type": "string",
+      "default": "auto-fit"
+    },
+    "alignContent": {
+      "type": "string",
+      "default": "stretch"
+    },
+    "padding": {
+      "type": "string",
+      "default": "1rem"
     }
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css"
+  "style": "file:./style-index.css",
+  "description": "区切り線付きのレスポンシブグリッドレイアウトブロックです。"
 }

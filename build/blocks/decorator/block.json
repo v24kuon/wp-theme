@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/decorator",
   "version": "1.0.0",
-  "title": "Decorator",
+  "title": "デコレーター",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -30,9 +30,46 @@
     "backdropFilter": {
       "type": "string",
       "default": "none"
+    },
+    "maxWidth": {
+      "type": "string",
+      "default": ""
+    },
+    "minWidth": {
+      "type": "string",
+      "default": ""
+    },
+    "maxHeight": {
+      "type": "string",
+      "default": ""
+    },
+    "minHeight": {
+      "type": "string",
+      "default": ""
+    },
+    "justifyItems": {
+      "type": "string",
+      "default": "stretch"
+    },
+    "alignContent": {
+      "type": "string",
+      "default": "stretch"
+    },
+    "backgroundClip": {
+      "type": "boolean",
+      "default": false
+    },
+    "padding": {
+      "type": "string",
+      "default": ""
+    },
+    "overflow": {
+      "type": "string",
+      "default": ""
     }
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css"
+  "style": "file:./style-index.css",
+  "description": "装飾的な要素や背景を追加するためのブロックです。"
 }

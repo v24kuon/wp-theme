@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/frame",
   "version": "1.0.0",
-  "title": "Frame",
+  "title": "フレーム",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -30,9 +30,14 @@
     "aspectRatio": {
       "type": "string",
       "default": "16/9"
+    },
+    "switchRatio": {
+      "type": "boolean",
+      "default": false
     }
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css"
+  "style": "file:./style-index.css",
+  "description": "画像やメディアを特定の縦横比で切り抜いて表示するレイアウトブロックです。"
 }

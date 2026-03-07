@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/center",
   "version": "1.0.0",
-  "title": "Center",
+  "title": "センター",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -34,9 +34,18 @@
     "maxWidth": {
       "type": "string",
       "default": "100%"
+    },
+    "intrinsic": {
+      "type": "boolean",
+      "default": false
+    },
+    "padding": {
+      "type": "string",
+      "default": ""
     }
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css"
+  "style": "file:./style-index.css",
+  "description": "コンテンツを中央に配置し、最大幅を制限するレイアウトブロックです。"
 }

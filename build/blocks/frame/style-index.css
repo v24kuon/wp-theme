@@ -1,1 +1,1 @@
-.tagme-frame{align-items:center;aspect-ratio:var(--tagme-frame-aspect-ratio,16/9);display:flex;justify-content:center;overflow:hidden;&>*{height:100%;-o-object-fit:cover;object-fit:cover;width:100%}}
+.tagme-frame{align-items:center;aspect-ratio:var(--tagme-frame-aspect-ratio,16/9);display:flex;justify-content:center;overflow:hidden;&>*{height:100%;-o-object-fit:cover;object-fit:cover;width:100%}}@media (orientation:portrait){.tagme-frame[data-switch-ratio=true]{aspect-ratio:calc(1/(var(--tagme-frame-aspect-ratio, 16/9)))}}

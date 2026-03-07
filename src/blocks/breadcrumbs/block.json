@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/breadcrumbs",
   "version": "1.0.0",
-  "title": "Breadcrumbs",
+  "title": "パンくずリスト",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -34,5 +34,7 @@
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css"
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "description": "パンくずリストを表示するブロックです。"
 }

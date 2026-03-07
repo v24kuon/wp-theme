@@ -2,3 +2,27 @@
   max-width: var(--tagme-text-max-width, 60ch);
   margin-inline: auto;
 }
+
+.tagme-text[data-intrinsic="true"] {
+  width: fit-content;
+}
+
+.tagme-text[data-multi-column="true"] {
+  columns: var(--tagme-text-max-width, 100%);
+}
+
+.tagme-text {
+  padding: var(--tagme-text-padding, 0);
+}
+
+.tagme-text[data-intrinsic="true"] {
+  width: fit-content;
+}
+
+.tagme-text[data-multi-column="true"] {
+  columns: var(--tagme-text-max-width, 100%);
+}
+
+.tagme-text {
+  padding: var(--tagme-text-padding, 0);
+}

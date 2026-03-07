@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/responsive-switcher",
   "version": "1.0.0",
-  "title": "Responsive Switcher",
+  "title": "レスポンシブスイッチャー",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -34,5 +34,6 @@
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css"
+  "style": "file:./style-index.css",
+  "description": "画面幅に応じてレイアウトが切り替わるスイッチャーブロックです。"
 }

@@ -1,8 +1,18 @@
 .tagme-cluster-divided {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: var(--tagme-cluster-divided-wrap, wrap);
   & > * + * {
     border-left: 1px solid currentColor;
     padding-left: var(--tagme-cluster-divided-padding, 1rem);
   }
+}
+
+.tagme-cluster-divided {
+  flex-wrap: var(--tagme-cluster-divided-no-wrap, wrap);
+  justify-content: var(--tagme-cluster-divided-justify-content, flex-start);
+}
+
+.tagme-cluster-divided {
+  flex-wrap: var(--tagme-cluster-divided-no-wrap, wrap);
+  justify-content: var(--tagme-cluster-divided-justify-content, flex-start);
 }

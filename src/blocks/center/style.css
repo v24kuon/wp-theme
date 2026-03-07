@@ -8,3 +8,17 @@
   max-width: var(--tagme-center-max-width, 100%);
   text-align: var(--tagme-center-text-align, initial);
 }
+
+.tagme-center[data-intrinsic="true"] {
+  width: fit-content;
+}
+.tagme-center {
+  padding: var(--tagme-center-padding, 0);
+}
+
+.tagme-center[data-intrinsic="true"] {
+  width: fit-content;
+}
+.tagme-center {
+  padding: var(--tagme-center-padding, 0);
+}

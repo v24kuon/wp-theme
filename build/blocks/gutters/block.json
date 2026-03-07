@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/gutters",
   "version": "1.0.0",
-  "title": "Gutters",
+  "title": "ガター",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -34,5 +34,6 @@
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css"
+  "style": "file:./style-index.css",
+  "description": "子要素間に一定の余白（ガター）を設けるレイアウトブロックです。"
 }

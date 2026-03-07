@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/reel",
   "version": "1.0.0",
-  "title": "Reel",
+  "title": "リール",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -38,5 +38,6 @@
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css"
+  "style": "file:./style-index.css",
+  "description": "横スクロール可能なコンテンツ領域を作成するレイアウトブロックです。"
 }

@@ -1,1 +1,1 @@
-.tagme-container{margin-inline:auto;max-width:var(--tagme-container-max-width,1000px)}
+.tagme-container{margin-inline:auto;max-width:var(--tagme-container-max-width,1000px);padding:var(--tagme-container-padding,0)}

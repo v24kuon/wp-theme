@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/stack",
   "version": "1.0.0",
-  "title": "Stack",
+  "title": "スタック",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -38,9 +38,18 @@
     "justifyContent": {
       "type": "string",
       "default": "flex-start"
+    },
+    "alignItems": {
+      "type": "string",
+      "default": "stretch"
+    },
+    "useNegativeMargin": {
+      "type": "boolean",
+      "default": false
     }
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css"
+  "style": "file:./style-index.css",
+  "description": "子要素を垂直方向に積み重ねる基本的なレイアウトブロックです。"
 }

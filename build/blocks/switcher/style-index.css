@@ -1,1 +1,1 @@
-.tagme-switcher{align-items:flex-start;display:flex;flex-wrap:wrap;&>*{flex-basis:calc((var(--tagme-switcher-threshold, 40rem) - 100%)*999);flex-grow:1}}
+.tagme-switcher{align-items:flex-start;display:flex;flex-wrap:wrap;&>*{flex-basis:calc((var(--tagme-switcher-threshold, 40rem) - 100%)*999);flex-grow:1}}.tagme-switcher[data-is-reverse=true]{flex-direction:row-reverse;flex-wrap:wrap-reverse}.tagme-switcher{align-items:var(--tagme-switcher-align-items,stretch)}.tagme-switcher[data-stairs=true]>:nth-child(2n){margin-top:2rem}

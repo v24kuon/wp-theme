@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/cover",
   "version": "1.0.0",
-  "title": "Cover",
+  "title": "カバー",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -38,5 +38,6 @@
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css"
+  "style": "file:./style-index.css",
+  "description": "コンテンツを垂直方向に画面いっぱいに広げ、中央に配置するレイアウトブロックです。"
 }

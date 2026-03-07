@@ -10,3 +10,21 @@
     object-fit: cover;
   }
 }
+
+.tagme-frame[data-switch-ratio="true"] {
+  /* Requires media query for portrait to flip aspect ratio */
+}
+@media (orientation: portrait) {
+  .tagme-frame[data-switch-ratio="true"] {
+    aspect-ratio: calc(1 / (var(--tagme-frame-aspect-ratio, 16/9)));
+  }
+}
+
+.tagme-frame[data-switch-ratio="true"] {
+  /* Requires media query for portrait to flip aspect ratio */
+}
+@media (orientation: portrait) {
+  .tagme-frame[data-switch-ratio="true"] {
+    aspect-ratio: calc(1 / (var(--tagme-frame-aspect-ratio, 16/9)));
+  }
+}

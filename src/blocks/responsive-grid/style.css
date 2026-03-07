@@ -2,3 +2,11 @@
   display: grid;
   grid-template-columns: repeat(var(--tagme-grid-auto-repeat, auto-fit), minmax(min(var(--tagme-grid-min, 250px), 100%), 1fr));
 }
+
+.tagme-responsive-grid[data-stairs="true"] > *:nth-child(even) {
+  margin-top: 2rem;
+}
+
+.tagme-responsive-grid[data-stairs="true"] > *:nth-child(even) {
+  margin-top: 2rem;
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tagme/grid",
+  "version": "1.0.0",
+  "title": "Grid (Legacy)",
+  "category": "layout",
+  "supports": {
+    "html": false,
+    "inserter": false
+  },
+  "attributes": {
+    "columns": {
+      "type": "number",
+      "default": 3
+    }
+  },
+  "textdomain": "tagme",
+  "editorScript": "file:./index.js",
+  "description": "非推奨のグリッドブロックです。レスポンシブグリッドを使用してください。"
+}

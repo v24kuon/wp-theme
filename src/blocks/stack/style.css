@@ -1,5 +1,20 @@
 .tagme-stack {
   display: flex;
-  flex-direction: column;
+  flex-direction: var(--tagme-stack-direction, column);
   justify-content: var(--tagme-stack-justify-content, flex-start);
+  align-items: var(--tagme-stack-align-items, stretch);
+}
+
+.tagme-stack[data-is-reverse="true"] {
+  flex-direction: column-reverse;
+}
+.tagme-stack[data-use-negative-margin="true"] > * + * {
+  margin-block-start: calc(var(--wp--style--block-gap, 1rem) * -1);
+}
+
+.tagme-stack[data-is-reverse="true"] {
+  flex-direction: column-reverse;
+}
+.tagme-stack[data-use-negative-margin="true"] > * + * {
+  margin-block-start: calc(var(--wp--style--block-gap, 1rem) * -1);
 }

@@ -1,1 +1,1 @@
-.tagme-cluster{align-items:var(--tagme-cluster-align-items,center);display:flex;flex-wrap:var(--tagme-cluster-wrap,wrap);justify-content:var(--tagme-cluster-justify-content,flex-start)}
+.tagme-cluster{align-items:var(--tagme-cluster-align-items,center);display:flex;flex-wrap:var(--tagme-cluster-wrap,wrap);justify-content:var(--tagme-cluster-justify-content,flex-start)}.tagme-cluster[data-no-wrap=true]{flex-wrap:nowrap}

@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/stack-divided",
   "version": "1.0.0",
-  "title": "Stack (Divided)",
+  "title": "スタック (区切りあり)",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -30,9 +30,18 @@
     "tagName": {
       "type": "string",
       "default": "div"
+    },
+    "isReverse": {
+      "type": "boolean",
+      "default": false
+    },
+    "padding": {
+      "type": "string",
+      "default": "1rem"
     }
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css"
+  "style": "file:./style-index.css",
+  "description": "子要素を垂直方向に積み重ね、間に区切り線を引くレイアウトブロックです。"
 }

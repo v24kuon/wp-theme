@@ -4,3 +4,11 @@
   align-items: var(--tagme-cluster-align-items, center);
   justify-content: var(--tagme-cluster-justify-content, flex-start);
 }
+
+.tagme-cluster[data-no-wrap="true"] {
+  flex-wrap: nowrap;
+}
+
+.tagme-cluster[data-no-wrap="true"] {
+  flex-wrap: nowrap;
+}

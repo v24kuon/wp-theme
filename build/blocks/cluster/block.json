@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/cluster",
   "version": "1.0.0",
-  "title": "Cluster",
+  "title": "クラスター",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -42,5 +42,6 @@
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css"
+  "style": "file:./style-index.css",
+  "description": "子要素をインラインで並べ、折り返しを制御するレイアウトブロックです。"
 }

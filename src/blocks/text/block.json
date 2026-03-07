@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "tagme/text",
   "version": "1.0.0",
-  "title": "Text",
+  "title": "テキスト",
   "category": "layout",
   "icon": "layout",
   "supports": {
@@ -30,9 +30,22 @@
     "maxWidth": {
       "type": "string",
       "default": "60ch"
+    },
+    "intrinsic": {
+      "type": "boolean",
+      "default": false
+    },
+    "multiColumn": {
+      "type": "boolean",
+      "default": false
+    },
+    "padding": {
+      "type": "string",
+      "default": ""
     }
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css"
+  "style": "file:./style-index.css",
+  "description": "テキストを読みやすい最大幅に制限するレイアウトブロックです。"
 }

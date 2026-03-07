@@ -6,3 +6,17 @@
   border-radius: var(--tagme-badge-border-radius, 0.25em);
   font-size: var(--tagme-badge-size, 0.85em);
 }
+
+.tagme-badge[data-shape="round"] {
+  border-radius: 9999px;
+}
+.tagme-badge[data-shape="square"] {
+  border-radius: 0;
+}
+
+.tagme-badge[data-shape="round"] {
+  border-radius: 9999px;
+}
+.tagme-badge[data-shape="square"] {
+  border-radius: 0;
+}
