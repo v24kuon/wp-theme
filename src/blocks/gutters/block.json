@@ -34,6 +34,5 @@
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css",
-  "description": "子要素間に一定の余白（ガター）を設けるレイアウトブロックです。"
+  "style": "file:./style-index.css"
 }

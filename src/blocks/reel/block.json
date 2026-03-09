@@ -38,6 +38,5 @@
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css",
-  "description": "横スクロール可能なコンテンツ領域を作成するレイアウトブロックです。"
+  "style": "file:./style-index.css"
 }

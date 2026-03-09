@@ -30,30 +30,9 @@
     "backgroundBehavior": {
       "type": "string",
       "default": "cover"
-    },
-    "blur": {
-      "type": "string",
-      "default": ""
-    },
-    "switchGrid": {
-      "type": "boolean",
-      "default": false
-    },
-    "columns": {
-      "type": "number",
-      "default": 1
-    },
-    "rows": {
-      "type": "number",
-      "default": 1
-    },
-    "minHeight": {
-      "type": "string",
-      "default": ""
     }
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css",
-  "description": "子要素を重ねて配置するレイアウトブロックです。"
+  "style": "file:./style-index.css"
 }

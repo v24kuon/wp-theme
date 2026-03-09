@@ -38,22 +38,9 @@
     "mainMinWidth": {
       "type": "string",
       "default": "50%"
-    },
-    "isReverse": {
-      "type": "boolean",
-      "default": false
-    },
-    "alignItems": {
-      "type": "string",
-      "default": "stretch"
-    },
-    "overflow": {
-      "type": "string",
-      "default": ""
     }
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css",
-  "description": "メインコンテンツとサイドバーを持つレイアウトブロックです。"
+  "style": "file:./style-index.css"
 }

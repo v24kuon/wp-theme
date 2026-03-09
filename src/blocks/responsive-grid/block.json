@@ -34,14 +34,9 @@
     "autoRepeat": {
       "type": "string",
       "default": "auto-fit"
-    },
-    "stairs": {
-      "type": "boolean",
-      "default": false
     }
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css",
-  "description": "画面幅に応じてカラム数が自動的に変化するグリッドレイアウトブロックです。"
+  "style": "file:./style-index.css"
 }

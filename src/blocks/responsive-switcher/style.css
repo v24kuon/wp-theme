@@ -1,22 +1,20 @@
 .tagme-responsive-switcher {
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*
  * Every Layout 'Switcher' trick:
- * The threshold determines when elements wrap into a single column.
- * Since CSS variables can't be used in media/container queries,
-	we use calc().
+ * The threshold (breakpoint) determines when elements wrap into a single column.
+ * Since CSS variables can't be used in media/container queries, we use calc().
  */
 .tagme-responsive-switcher > * {
-	flex-grow: 1;
-	flex-basis: calc((var(--tagme-responsive-switcher-breakpoint, 768px) - 100%) * 999);
+  flex-grow: 1;
+  flex-basis: calc((var(--tagme-responsive-switcher-breakpoint, 768px) - 100%) * 999);
 }
 
-/* If the element is forced to wrap,
-	ensure it takes up at least 100% width */
+/* If the element is forced to wrap, ensure it takes up at least 100% width */
 .tagme-responsive-switcher > :nth-last-child(n+2),
 .tagme-responsive-switcher > :nth-last-child(n+2) ~ * {
-	min-width: 100%;
+  min-width: 100%;
 }

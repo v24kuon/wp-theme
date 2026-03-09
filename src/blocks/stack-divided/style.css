@@ -1,13 +1,8 @@
 .tagme-stack-divided {
-	display: flex;
-	flex-direction: var(--tagme-stack-divided-direction, column);
-
-	> * + * {
-		border-top: 1px solid currentcolor;
-		padding-top: var(--tagme-stack-divided-padding, 1rem);
-	}
-}
-
-.tagme-stack-divided[data-is-reverse="true"] {
-	flex-direction: column-reverse;
+  display: flex;
+  flex-direction: var(--tagme-stack-divided-direction, column);
+  & > * + * {
+    border-top: 1px solid currentColor;
+    padding-top: var(--tagme-stack-divided-padding, 1rem);
+  }
 }

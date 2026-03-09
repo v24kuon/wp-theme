@@ -1,34 +1,17 @@
 .tagme-with-sidebar-divided {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
-
-	> :first-child {
-		flex-basis: var(--tagme-with-sidebar-sidebar-width, 300px);
-		flex-grow: 1;
-		border-right: 1px solid currentcolor;
-		padding-right: 1rem;
-	}
-
-	> :last-child {
-		flex-basis: 0;
-		flex-grow: 999;
-		min-width: var(--tagme-with-sidebar-main-min-width, 50%);
-		padding-left: 1rem;
-	}
-}
-
-.tagme-with-sidebar-divided[data-is-reverse="true"] {
-	flex-direction: row-reverse;
-	flex-wrap: wrap-reverse;
-}
-
-.tagme-with-sidebar-divided > * {
-	background-color: var(--wp--preset--color--base, #fff);
-	padding: var(--tagme-with-sidebar-divided-padding, 1rem);
-}
-
-.tagme-with-sidebar-divided[data-sidebar-side="right"] > :last-child {
-	flex-basis: var(--tagme-with-sidebar-divided-sidebar-width, auto);
-	flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  & > :first-child {
+    flex-basis: var(--tagme-with-sidebar-sidebar-width, 300px);
+    flex-grow: 1;
+    border-right: 1px solid currentColor;
+    padding-right: 1rem;
+  }
+  & > :last-child {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: var(--tagme-with-sidebar-main-min-width, 50%);
+    padding-left: 1rem;
+  }
 }

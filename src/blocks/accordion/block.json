@@ -7,10 +7,7 @@
   "category": "layout",
   "icon": "layout",
   "supports": {
-    "align": [
-      "wide",
-      "full"
-    ],
+    "align": ["wide", "full"],
     "html": false,
     "spacing": {
       "margin": true,
@@ -36,38 +33,9 @@
       "source": "html",
       "selector": "summary",
       "default": "アコーディオンを開く"
-    },
-    "mark": {
-      "type": "string",
-      "default": "plus"
-    },
-    "defaultOpen": {
-      "type": "boolean",
-      "default": false
-    },
-    "useQuestionLabel": {
-      "type": "boolean",
-      "default": false
-    },
-    "questionWidth": {
-      "type": "string",
-      "default": ""
-    },
-    "useAnswerLabel": {
-      "type": "boolean",
-      "default": false
-    },
-    "answerWidth": {
-      "type": "string",
-      "default": ""
-    },
-    "padding": {
-      "type": "string",
-      "default": "1rem"
     }
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css",
-  "description": "アコーディオン形式でコンテンツを開閉するブロックです。"
+  "style": "file:./style-index.css"
 }

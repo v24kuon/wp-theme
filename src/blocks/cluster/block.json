@@ -42,6 +42,5 @@
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css",
-  "description": "子要素をインラインで並べ、折り返しを制御するレイアウトブロックです。"
+  "style": "file:./style-index.css"
 }

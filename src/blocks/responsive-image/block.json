@@ -7,31 +7,16 @@
   "category": "media",
   "icon": "format-image",
   "supports": {
-    "align": [
-      "wide",
-      "full"
-    ],
+    "align": ["wide", "full"],
     "html": false,
-    "spacing": {
-      "margin": true,
-      "padding": true
-    },
-    "color": {
-      "background": true,
-      "text": true
-    }
+    "spacing": { "margin": true, "padding": true },
+    "color": { "background": true, "text": true }
   },
   "attributes": {
-    "imageUrl": {
-      "type": "string"
-    },
-    "alt": {
-      "type": "string",
-      "default": ""
-    }
+    "imageUrl": { "type": "string" },
+    "alt": { "type": "string", "default": "" }
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css",
-  "description": "レスポンシブ対応の画像を表示するブロックです。"
+  "style": "file:./style-index.css"
 }

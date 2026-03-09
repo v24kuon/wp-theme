@@ -30,26 +30,9 @@
     "textOrientation": {
       "type": "string",
       "default": "mixed"
-    },
-    "threshold": {
-      "type": "string",
-      "default": ""
-    },
-    "switchPortrait": {
-      "type": "boolean",
-      "default": false
-    },
-    "maxWidth": {
-      "type": "string",
-      "default": ""
-    },
-    "maxHeight": {
-      "type": "string",
-      "default": ""
     }
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css",
-  "description": "テキストを縦書きで表示するブロックです。"
+  "style": "file:./style-index.css"
 }

@@ -38,18 +38,9 @@
     "justifyContent": {
       "type": "string",
       "default": "flex-start"
-    },
-    "alignItems": {
-      "type": "string",
-      "default": "stretch"
-    },
-    "useNegativeMargin": {
-      "type": "boolean",
-      "default": false
     }
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css",
-  "description": "子要素を垂直方向に積み重ねる基本的なレイアウトブロックです。"
+  "style": "file:./style-index.css"
 }

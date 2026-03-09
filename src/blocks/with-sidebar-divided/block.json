@@ -30,38 +30,9 @@
     "sidebarSide": {
       "type": "string",
       "default": "left"
-    },
-    "isReverse": {
-      "type": "boolean",
-      "default": false
-    },
-    "sidebarWidth": {
-      "type": "string",
-      "default": "auto"
-    },
-    "mainMinWidth": {
-      "type": "string",
-      "default": "50%"
-    },
-    "alignItems": {
-      "type": "string",
-      "default": "stretch"
-    },
-    "alignContent": {
-      "type": "string",
-      "default": "stretch"
-    },
-    "padding": {
-      "type": "string",
-      "default": "1rem"
-    },
-    "tagName": {
-      "type": "string",
-      "default": "div"
     }
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css",
-  "description": "メインコンテンツとサイドバーの間に区切り線を持つレイアウトブロックです。"
+  "style": "file:./style-index.css"
 }

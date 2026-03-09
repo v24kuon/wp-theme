@@ -38,6 +38,5 @@
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css",
-  "description": "コンテンツを垂直方向に画面いっぱいに広げ、中央に配置するレイアウトブロックです。"
+  "style": "file:./style-index.css"
 }

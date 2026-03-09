@@ -1,19 +1,9 @@
 .tagme-switcher {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
-
-	> * {
-		flex-grow: 1;
-		flex-basis: calc((var(--tagme-switcher-threshold, 40rem) - 100%) * 999);
-	}
-}
-
-.tagme-switcher[data-is-reverse="true"] {
-	flex-direction: row-reverse;
-	flex-wrap: wrap-reverse;
-}
-
-.tagme-switcher[data-stairs="true"] > *:nth-child(even) {
-	margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  & > * {
+    flex-grow: 1;
+    flex-basis: calc((var(--tagme-switcher-threshold, 40rem) - 100%) * 999);
+  }
 }

@@ -16,6 +16,5 @@
     }
   },
   "textdomain": "tagme",
-  "editorScript": "file:./index.js",
-  "description": "非推奨のグリッドブロックです。レスポンシブグリッドを使用してください。"
+  "editorScript": "file:./index.js"
 }

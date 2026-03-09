@@ -34,6 +34,5 @@
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css",
-  "description": "子要素を左右に配置し、中央に余白を持たせるレイアウトブロックです。"
+  "style": "file:./style-index.css"
 }

@@ -1,11 +1,4 @@
 .tagme-vertical-writing {
-	writing-mode: vertical-rl;
-	text-orientation: var(--tagme-vertical-writing-text-orientation, mixed);
-}
-
-@media (orientation: portrait) {
-
-	.tagme-vertical-writing[data-switch-portrait="true"] {
-		writing-mode: horizontal-tb;
-	}
+  writing-mode: vertical-rl;
+  text-orientation: var(--tagme-vertical-writing-text-orientation, mixed);
 }

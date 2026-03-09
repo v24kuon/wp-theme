@@ -38,6 +38,5 @@
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css",
-  "description": "テキストにバッジ（ラベル）スタイルを適用するブロックです。"
+  "style": "file:./style-index.css"
 }

@@ -1,11 +1,4 @@
 .tagme-decorator {
-	display: block;
-	position: relative;
-	backdrop-filter: var(--tagme-decorator-backdrop-filter, none);
-}
-
-.tagme-decorator[data-background-clip="true"] {
-	background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent;
+  display: block;
+  position: relative;
 }

@@ -1,25 +1,12 @@
 .tagme-frame {
-	aspect-ratio: var(--tagme-frame-aspect-ratio, 16 / 9);
-	overflow: hidden;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	> * {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-}
-
-.tagme-frame[data-switch-ratio="true"] {
-
-	/* Requires media query for portrait to flip aspect ratio */
-}
-
-@media (orientation: portrait) {
-
-	.tagme-frame[data-switch-ratio="true"] {
-		aspect-ratio: calc(1 / (var(--tagme-frame-aspect-ratio, 16 / 9)));
-	}
+  aspect-ratio: var(--tagme-frame-aspect-ratio, 16/9);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & > * {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }

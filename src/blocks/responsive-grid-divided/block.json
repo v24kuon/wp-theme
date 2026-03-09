@@ -30,26 +30,9 @@
     "gridMin": {
       "type": "string",
       "default": "250px"
-    },
-    "tagName": {
-      "type": "string",
-      "default": "div"
-    },
-    "autoRepeat": {
-      "type": "string",
-      "default": "auto-fit"
-    },
-    "alignContent": {
-      "type": "string",
-      "default": "stretch"
-    },
-    "padding": {
-      "type": "string",
-      "default": "1rem"
     }
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css",
-  "description": "区切り線付きのレスポンシブグリッドレイアウトブロックです。"
+  "style": "file:./style-index.css"
 }

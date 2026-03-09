@@ -30,22 +30,9 @@
     "threshold": {
       "type": "string",
       "default": "40rem"
-    },
-    "isReverse": {
-      "type": "boolean",
-      "default": false
-    },
-    "alignItems": {
-      "type": "string",
-      "default": "stretch"
-    },
-    "stairs": {
-      "type": "boolean",
-      "default": false
     }
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css",
-  "description": "指定した幅（閾値）を境に、水平・垂直レイアウトを切り替えるブロックです。"
+  "style": "file:./style-index.css"
 }

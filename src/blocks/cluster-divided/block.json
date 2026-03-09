@@ -30,22 +30,9 @@
     "noWrap": {
       "type": "boolean",
       "default": false
-    },
-    "tagName": {
-      "type": "string",
-      "default": "div"
-    },
-    "justifyContent": {
-      "type": "string",
-      "default": "flex-start"
-    },
-    "padding": {
-      "type": "string",
-      "default": "1rem"
     }
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css",
-  "description": "区切り線付きで子要素をインラインで並べるレイアウトブロックです。"
+  "style": "file:./style-index.css"
 }

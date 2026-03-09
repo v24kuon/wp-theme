@@ -34,6 +34,5 @@
   },
   "textdomain": "tagme",
   "editorScript": "file:./index.js",
-  "style": "file:./style-index.css",
-  "description": "画面幅に応じてレイアウトが切り替わるスイッチャーブロックです。"
+  "style": "file:./style-index.css"
 }
