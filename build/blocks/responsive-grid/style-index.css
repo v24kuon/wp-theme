@@ -1,0 +1,1 @@
+.tagme-responsive-grid{display:grid;grid-template-columns:repeat(var(--tagme-grid-auto-repeat,auto-fit),minmax(min(var(--tagme-grid-min,250px),100%),1fr))}
