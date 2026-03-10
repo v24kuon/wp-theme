@@ -1,0 +1,148 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "1000px",
+      "wideSize": "1200px"
+    },
+    "spacing": {
+      "defaultSpacingSizes": false,
+      "spacingSizes": [
+        {
+          "size": "clamp(8px, 0.5vw + 6px, 13px)",
+          "slug": "10",
+          "name": "Fibonacci 1 (8-13)"
+        },
+        {
+          "size": "clamp(13px, 1vw + 9px, 21px)",
+          "slug": "20",
+          "name": "Fibonacci 2 (13-21)"
+        },
+        {
+          "size": "clamp(21px, 2vw + 13px, 34px)",
+          "slug": "30",
+          "name": "Fibonacci 3 (21-34)"
+        },
+        {
+          "size": "clamp(34px, 3.5vw + 20px, 55px)",
+          "slug": "40",
+          "name": "Fibonacci 4 (34-55)"
+        },
+        {
+          "size": "clamp(55px, 5.5vw + 33px, 89px)",
+          "slug": "50",
+          "name": "Fibonacci 5 (55-89)"
+        },
+        {
+          "size": "clamp(89px, 8.5vw + 55px, 144px)",
+          "slug": "60",
+          "name": "Fibonacci 6 (89-144)"
+        },
+        {
+          "size": "clamp(144px, 14vw + 88px, 233px)",
+          "slug": "70",
+          "name": "Fibonacci 7 (144-233)"
+        }
+      ],
+      "units": ["%", "px", "em", "rem", "vh", "vw"]
+    },
+    "typography": {
+      "defaultFontSizes": false,
+      "textColumns": true,
+      "writingMode": true,
+      "fluid": true,
+      "fontSizes": [
+        {
+          "size": "13px",
+          "fluid": {
+            "min": "13px",
+            "max": "21px"
+          },
+          "slug": "level-1",
+          "name": "Fibonacci 1"
+        },
+        {
+          "size": "21px",
+          "fluid": {
+            "min": "21px",
+            "max": "34px"
+          },
+          "slug": "level-2",
+          "name": "Fibonacci 2"
+        },
+        {
+          "size": "34px",
+          "fluid": {
+            "min": "34px",
+            "max": "55px"
+          },
+          "slug": "level-3",
+          "name": "Fibonacci 3"
+        },
+        {
+          "size": "55px",
+          "fluid": {
+            "min": "55px",
+            "max": "89px"
+          },
+          "slug": "level-4",
+          "name": "Fibonacci 4"
+        },
+        {
+          "size": "89px",
+          "fluid": {
+            "min": "89px",
+            "max": "144px"
+          },
+          "slug": "level-5",
+          "name": "Fibonacci 5"
+        },
+        {
+          "size": "144px",
+          "fluid": {
+            "min": "144px",
+            "max": "233px"
+          },
+          "slug": "level-6",
+          "name": "Fibonacci 6"
+        },
+        {
+          "size": "233px",
+          "fluid": {
+            "min": "233px",
+            "max": "377px"
+          },
+          "slug": "level-7",
+          "name": "Fibonacci 7"
+        }
+      ],
+      "fontFamilies": [
+        {
+          "slug": "system-font",
+          "name": "System Font",
+          "fontFamily": "'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif"
+        },
+        {
+          "slug": "mincho-font",
+          "name": "Mincho font",
+          "fontFamily": "'Times New Roman', 'YuMincho', 'Hiragino Mincho ProN', 'Yu Mincho', 'MS PMincho', serif"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontSize": "var(--wp--preset--font-size--level-1)",
+      "fontFamily": "var(--wp--preset--font-family--system-font)"
+    },
+    "elements": {
+      "link": {
+        "typography": {
+          "textDecoration": "none"
+        }
+      }
+    }
+  }
+}
