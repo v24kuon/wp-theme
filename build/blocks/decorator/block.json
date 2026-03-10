@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tagme/decorator",
+  "version": "1.0.0",
+  "title": "デコレーター",
+  "category": "layout",
+  "icon": "layout",
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    },
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    }
+  },
+  "attributes": {
+    "backdropFilter": {
+      "type": "string",
+      "default": "none"
+    }
+  },
+  "textdomain": "tagme",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

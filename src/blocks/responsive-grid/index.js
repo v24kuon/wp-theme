@@ -1,0 +1,61 @@
+import { registerBlockType } from '@wordpress/blocks';
+import { useBlockProps, InnerBlocks, InspectorControls } from '@wordpress/block-editor';
+import { PanelBody, TextControl, ToggleControl, SelectControl, __experimentalUnitControl } from '@wordpress/components';
+import metadata from './block.json';
+import './style.css';
+
+registerBlockType(metadata.name, {
+  edit: ({ attributes, setAttributes }) => {
+    const { gridMin, autoRepeat } = attributes;
+    const blockProps = useBlockProps({
+      className: 'tagme-responsive-grid',
+      style: {
+      '--tagme-grid-min': gridMin,
+      '--tagme-grid-auto-repeat': autoRepeat
+    }
+    });
+    const TagName = 'div';
+    return (
+      <>
+        <InspectorControls>
+          <PanelBody title="レイアウト設定">
+
+            <__experimentalUnitControl
+              label="カラムの最小幅"
+              value={ gridMin }
+              onChange={ (value) => setAttributes({ gridMin: value }) }
+            />
+            <SelectControl
+              label="自動反復 (Auto Repeat)"
+              value={ autoRepeat }
+              options={ [
+                { label: 'auto-fit (埋める)', value: 'auto-fit' },
+                { label: 'auto-fill (維持する)', value: 'auto-fill' },
+              ] }
+              onChange={ (value) => setAttributes({ autoRepeat: value }) }
+            />
+          </PanelBody>
+        </InspectorControls>
+        <TagName { ...blockProps }>
+          <InnerBlocks />
+        </TagName>
+      </>
+    );
+  },
+  save: ({ attributes }) => {
+    const { gridMin, autoRepeat } = attributes;
+    const blockProps = useBlockProps.save({
+      className: 'tagme-responsive-grid',
+      style: {
+      '--tagme-grid-min': gridMin,
+      '--tagme-grid-auto-repeat': autoRepeat
+    }
+    });
+    const TagName = 'div';
+    return (
+      <TagName { ...blockProps }>
+        <InnerBlocks.Content />
+      </TagName>
+    );
+  }
+});

@@ -1,0 +1,10 @@
+.tagme-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+  margin-inline: auto;
+  max-width: var(--tagme-center-max-width, 100%);
+  text-align: var(--tagme-center-text-align, initial);
+}
