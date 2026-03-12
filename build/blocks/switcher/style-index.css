@@ -1,1 +1,0 @@
-.tagme-switcher{align-items:flex-start;display:flex;flex-wrap:wrap;&>*{flex-basis:calc((var(--tagme-switcher-threshold, 40rem) - 100%)*999);flex-grow:1}}

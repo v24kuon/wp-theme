@@ -1,9 +1,0 @@
-.tagme-responsive-grid-divided {
-  display: grid;
-  grid-template-columns: repeat(var(--tagme-grid-auto-repeat, auto-fit), minmax(min(var(--tagme-grid-min, 250px), 100%), 1fr));
-  gap: 1rem;
-  & > * {
-    border: 1px solid currentColor;
-    padding: 1rem;
-  }
-}

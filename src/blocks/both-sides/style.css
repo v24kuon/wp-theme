@@ -1,6 +1,0 @@
-.tagme-both-sides {
-  display: flex;
-  justify-content: space-between;
-  align-items: var(--tagme-both-sides-align-items, center);
-  flex-wrap: wrap;
-}
