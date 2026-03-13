@@ -10,34 +10,19 @@ License: GPLv2 or later
 Tags: block-theme, full-site-editing
 */
 
-:root {
-	/* Modular Scale: Perfect Fourth (ratio 1.333) */
-	--ratio: 1.333;
-	--s-5: calc(var(--s-4) / var(--ratio));
-	--s-4: calc(var(--s-3) / var(--ratio));
-	--s-3: calc(var(--s-2) / var(--ratio));
-	--s-2: calc(var(--s-1) / var(--ratio));
-	--s-1: calc(var(--s0) / var(--ratio));
-	--s0: 1rem;
-	--s1: calc(var(--s0) * var(--ratio));
-	--s2: calc(var(--s1) * var(--ratio));
-	--s3: calc(var(--s2) * var(--ratio));
-	--s4: calc(var(--s3) * var(--ratio));
-	--s5: calc(var(--s4) * var(--ratio));
+/*
+ * NOTE: CSS variables for scale and color are now managed by theme.json under settings.custom.
+ * WordPress automatically prefixes them with --wp--custom-- (e.g. --wp--custom--s0)
+ */
 
-	/* Thematic variables */
-	--color-bg: #fff;
-	--color-text: #222;
-	--color-link: #0056b3;
+:root {
+	/* Ensure fluid typography scales all rem-based variables (s-5 to s5, spacing, etc.) */
+	font-size: clamp(100%, 1rem + 1vw, 112.5%);
 }
 
 body {
-	background-color: var(--color-bg);
-	color: var(--color-text);
 	margin: 0;
 	padding: 0;
-	/* fluid typography set in theme.json, but baseline here if needed */
-	font-size: clamp(100%, 1rem + 1vw, 112.5%);
 }
 
 /* ==========================================================================
@@ -56,7 +41,7 @@ body {
 }
 
 .stack > * + * {
-	margin-block-start: var(--space, var(--s1));
+	margin-block-start: var(--space, var(--wp--custom--s1));
 }
 
 /* 2. Center: Center content horizontally with a max width */
@@ -64,14 +49,14 @@ body {
 	box-sizing: content-box;
 	margin-inline: auto;
 	max-inline-size: var(--wp--custom--layout--content-size, 60ch);
-	padding-inline: var(--s1);
+	padding-inline: var(--wp--custom--s1);
 }
 
 /* 3. Cluster: Elements clustered together with gap (horizontal first) */
 .cluster {
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--space, var(--s1));
+	gap: var(--space, var(--wp--custom--s1));
 	justify-content: flex-start;
 	align-items: center;
 }
@@ -80,7 +65,7 @@ body {
 .with-sidebar {
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--space, var(--s1));
+	gap: var(--space, var(--wp--custom--s1));
 }
 
 .with-sidebar > :first-child {
@@ -98,7 +83,7 @@ body {
 .switcher {
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--space, var(--s1));
+	gap: var(--space, var(--wp--custom--s1));
 }
 
 .switcher > * {
@@ -109,20 +94,20 @@ body {
 /* 6. Grid: Responsive grid using auto-fit and minmax */
 .auto-grid {
 	display: grid;
-	gap: var(--space, var(--s1));
+	gap: var(--space, var(--wp--custom--s1));
 	grid-template-columns: repeat(auto-fit, minmax(min(var(--min-width, 15rem), 100%), 1fr));
 }
 
 /* Adjustments for WP elements */
 .site-header {
-	padding-block: var(--s2);
+	padding-block: var(--wp--custom--s2);
 	border-bottom: 1px solid #eee;
 }
 
 .site-footer {
-	padding-block: var(--s2);
+	padding-block: var(--wp--custom--s2);
 	border-top: 1px solid #eee;
-	margin-block-start: var(--s4);
+	margin-block-start: var(--wp--custom--s4);
 }
 
 img {
