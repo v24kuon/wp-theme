@@ -1,8 +1,13 @@
 /*
 Theme Name: Tagme
-Description: A minimalist theme implementing Every Layout principles (intrinsic responsive design, layout primitives, modular scale).
+Description: A minimalist block theme implementing Every Layout principles (intrinsic responsive design, layout primitives, modular scale).
 Author: Jules
-Version: 1.0
+Version: 1.1
+Requires at least: 6.2
+Tested up to: 6.4
+Requires PHP: 7.4
+License: GPLv2 or later
+Tags: block-theme, full-site-editing
 */
 
 :root {
@@ -20,13 +25,6 @@ Version: 1.0
 	--s4: calc(var(--s3) * var(--ratio));
 	--s5: calc(var(--s4) * var(--ratio));
 
-	/* Fluid typography baseline */
-	font-size: clamp(100%, 1rem + 2vw, 112.5%);
-
-	/* Layout metrics */
-	--measure: 60ch;
-	--line-height: 1.5;
-
 	/* Thematic variables */
 	--color-bg: #fff;
 	--color-text: #222;
@@ -36,24 +34,10 @@ Version: 1.0
 body {
 	background-color: var(--color-bg);
 	color: var(--color-text);
-	font-family: system-ui, -apple-system, sans-serif;
-	line-height: var(--line-height);
 	margin: 0;
 	padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	line-height: 1.2;
-	margin-top: 0;
-}
-
-h1 { font-size: var(--s4); }
-h2 { font-size: var(--s3); }
-h3 { font-size: var(--s2); }
-h4 { font-size: var(--s1); }
-
-a {
-	color: var(--color-link);
+	/* fluid typography set in theme.json, but baseline here if needed */
+	font-size: clamp(100%, 1rem + 2vw, 112.5%);
 }
 
 /* ==========================================================================
@@ -79,7 +63,7 @@ a {
 .center {
 	box-sizing: content-box;
 	margin-inline: auto;
-	max-inline-size: var(--measure);
+	max-inline-size: var(--wp--custom--layout--content-size, 60ch);
 	padding-inline: var(--s1);
 }
 
@@ -129,7 +113,7 @@ a {
 	grid-template-columns: repeat(auto-fit, minmax(min(var(--min-width, 15rem), 100%), 1fr));
 }
 
-/* Base structural adjustments for WP */
+/* Adjustments for WP elements */
 .site-header {
 	padding-block: var(--s2);
 	border-bottom: 1px solid #eee;

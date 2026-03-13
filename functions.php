@@ -1,23 +1,26 @@
 <?php
 /**
  * Theme functions and definitions.
+ *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
+ * @package tagme
  */
 
-function tagme_setup() {
-	add_theme_support( 'title-tag' );
-	add_theme_support( 'post-thumbnails' );
-	add_theme_support( 'html5', array(
-		'search-form',
-		'comment-form',
-		'comment-list',
-		'gallery',
-		'caption',
-		'style',
-		'script',
-	) );
-}
-add_action( 'after_setup_theme', 'tagme_setup' );
+if ( ! function_exists( 'tagme_support' ) ) :
+	/**
+	 * Sets up theme defaults and registers support for various WordPress features.
+	 */
+	function tagme_support() {
+		// Enqueue editor styles.
+		add_editor_style( 'style.css' );
+	}
+endif;
+add_action( 'after_setup_theme', 'tagme_support' );
 
+/**
+ * Enqueue scripts and styles.
+ */
 function tagme_scripts() {
 	wp_enqueue_style( 'tagme-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 }
