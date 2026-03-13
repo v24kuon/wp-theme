@@ -52,6 +52,10 @@ body {
 	padding-inline: var(--wp--custom--s1);
 }
 
+.center[data-width="wide"] {
+	max-inline-size: var(--wp--custom--layout--wide-size, 80ch);
+}
+
 /* 3. Cluster: Elements clustered together with gap (horizontal first) */
 .cluster {
 	display: flex;
@@ -100,17 +104,107 @@ body {
 
 /* Adjustments for WP elements */
 .site-header {
-	padding-block: var(--wp--custom--s2);
-	border-bottom: 1px solid #eee;
+	padding-block: clamp(1rem, 2vh, var(--wp--custom--s2));
+	border-bottom: 1px solid var(--wp--custom--color-border, #d1d5db);
 }
 
 .site-footer {
 	padding-block: var(--wp--custom--s2);
-	border-top: 1px solid #eee;
+	border-top: 1px solid var(--wp--custom--color-border, #d1d5db);
 	margin-block-start: var(--wp--custom--s4);
 }
 
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+/* Links & Interactions */
+a {
+	transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+a:hover, a:focus-visible {
+	color: var(--wp--custom--color-link-hover, #003d82);
+	text-decoration-thickness: 0.15em;
+	outline: 2px solid var(--wp--custom--color-link);
+	outline-offset: 2px;
+}
+
+/* Tap Targets (Fitts's Law) */
+a, button, .wp-block-navigation-item a {
+	min-block-size: 44px;
+	display: inline-flex;
+	align-items: center;
+}
+
+/* Card UI / Elevation */
+.is-card {
+	padding: var(--wp--custom--s2);
+	border: 1px solid var(--wp--custom--color-border, #d1d5db);
+	border-radius: 8px;
+	background-color: var(--wp--custom--color-bg, #fff);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+	transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.is-card:hover {
+	box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+	transform: translateY(-2px);
+}
+
+/* Pagination Optimization */
+.wp-block-query-pagination {
+	justify-content: center;
+	gap: var(--wp--custom--s2);
+	margin-block-start: var(--wp--custom--s4);
+}
+
+.wp-block-query-pagination a,
+.wp-block-query-pagination .page-numbers {
+	padding: 0.5em 1em;
+	background: #f3f4f6;
+	border-radius: 4px;
+	text-decoration: none;
+	color: var(--wp--custom--color-text);
+}
+
+.wp-block-query-pagination .current {
+	background: var(--wp--custom--color-link);
+	color: #fff;
+}
+
+/* Breadcrumbs (Custom) */
+.tagme-breadcrumbs {
+	font-size: var(--wp--custom--s-1);
+	color: #666;
+	padding-block: var(--wp--custom--s1);
+}
+
+.tagme-breadcrumbs a {
+	color: var(--wp--custom--color-link);
+}
+
+.tagme-breadcrumbs .separator {
+	margin-inline: 0.5em;
+	color: var(--wp--custom--color-border);
+}
+
+/* Search Block Optimization */
+.wp-block-search {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.wp-block-search__input {
+	flex-grow: 1;
+	min-width: 15rem;
+	padding: 0.5rem 1rem;
+	border: 1px solid var(--wp--custom--color-border);
+	border-radius: 4px;
+}
+
+.wp-block-search__button {
+	white-space: nowrap;
 }
