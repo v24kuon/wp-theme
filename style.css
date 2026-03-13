@@ -37,7 +37,7 @@ body {
 	margin: 0;
 	padding: 0;
 	/* fluid typography set in theme.json, but baseline here if needed */
-	font-size: clamp(100%, 1rem + 2vw, 112.5%);
+	font-size: clamp(100%, 1rem + 1vw, 112.5%);
 }
 
 /* ==========================================================================

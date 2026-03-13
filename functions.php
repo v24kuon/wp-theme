@@ -13,6 +13,7 @@ if ( ! function_exists( 'tagme_support' ) ) :
 	 */
 	function tagme_support() {
 		// Enqueue editor styles.
+		add_theme_support( 'editor-styles' );
 		add_editor_style( 'style.css' );
 	}
 endif;
